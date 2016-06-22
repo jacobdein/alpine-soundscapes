@@ -6,3 +6,6 @@ nohup.out
 
 # folders
 python-grass-addon
+
+# jupyter
+.ipynb_checkpoints
