@@ -7,6 +7,7 @@ nohup.out
 # folders
 python-grass-addon
 working copies
+nacoustik
 
 # jupyter
 .ipynb_checkpoints
