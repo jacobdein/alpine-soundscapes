@@ -1,5 +1,5 @@
 # alpine-soundscapes
-A collection of [jupyter](http://jupyter.org) notebooks for analyzing soundscapes — developed from my "Soundscapes of the Alpine Landscapes" project in Innsbruck, Austria supported by a Fulbright U.S. student grant.
+A collection of [jupyter](http://jupyter.org) notebooks for analyzing soundscapes — developed from the "Soundscapes of the Alpine Landscapes" project in Innsbruck, Austria supported by a Fulbright U.S. student grant.
 
 ## Maps
 
@@ -7,7 +7,7 @@ A main goal of the project is to map the soundscape across the landscape. Here a
 
 ## Mission
 
-We am currently revising, improving, and adding new notebooks as we wrap up the project. All the data and results used in the analyses will be made easily accessible in the near future. We have tried to document my analysis process well and hope that this information will be useful to further soundscape research. We welcome suggestions and comments!
+We are currently revising, improving, and adding new notebooks as we wrap up the project. All the data and results used in the analyses will be made easily accessible in the near future. We have tried to document the analysis process well and hope that this information will be useful to further soundscape research. We welcome suggestions and comments!
 
 ## Setup
 
