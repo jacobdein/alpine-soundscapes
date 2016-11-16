@@ -4,7 +4,7 @@
 		<meta charset="UTF-8">
 		<title>alpine—soundscapes</title>
 	</head>
-    <style>
+	<style>
 		@import "https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700";
 		html, body, div, span, applet, object, iframe,
 		h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -72,24 +72,39 @@
 		  font-family: "Roboto Mono", monospace;
 		  font-weight: 700;
 		  font-size: 30px;
-		  padding-bottom: 20px;
+		  padding-bottom: 10px;
 		}
 		
 		p {
 		  padding-bottom: 10px;
 		}
 		
-		#map {
+		#biophony {
+			padding-bottom: 50px;
+		}
+		
+		.map {
 		  height: 500px;
 		  width: 100%;
 		}
-    </style>
+		
+		.right {
+			padding-top: 5px;
+			position: relative;
+			float: right;
+			font-size: 8pt;
+		}
+	</style>
 	<body>
-		<header>
-			<h1>biophony map</h1>
-		</header>
 		<main>
-			<iframe id="map" src="map.html"></iframe>
+			<h1>biophony</h1>
+			<p>natural sounds, such as bird calls
+				<span class="right">[ move the slider to see how biophony changed during the spring of 2016 &darr; ]</span>
+			</p>
+			<iframe id="biophony" class="map" src="biophony.html"></iframe>
+			<h1>anthrophony</h1>
+			<p>human and machine sounds, such as cars and trains</p>
+			<iframe id="anthrophony" class="map" src="anthrophony.html"></iframe>
 		</main>
 	</body>
 </html>

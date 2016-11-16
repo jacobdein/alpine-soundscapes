@@ -3,7 +3,7 @@ A collection of [jupyter](http://jupyter.org) notebooks for analyzing soundscape
 
 ## Maps
 
-A main goal of the project is to map the soundscape across the landscape. Here is a [map](https://jacobdein.github.io/alpine-soundscapes/) of biophony over the landscape near the study area. The map is based on an early version of a multilevel regression [model](https://github.com/jacobdein/alpine-soundscapes/blob/master/Regression%20model.ipynb) developed from data collected in the field.
+A main goal of the project is to map the soundscape across the landscape. Here are preliminary [maps](https://jacobdein.github.io/alpine-soundscapes/) of biophony and anthrophony over the landscape near the study area. The maps are based on an early version of a multilevel regression [model](https://github.com/jacobdein/alpine-soundscapes/blob/master/Regression%20model.ipynb) developed from data collected in the field.
 
 ## Mission
 
