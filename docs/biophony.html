@@ -1,374 +1,374 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 		<script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
 		<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster-src.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster.js"></script>
-		<script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
-		<script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.2/jquery.ui.touch-punch.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster-src.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.2/jquery.ui.touch-punch.min.js"></script>
 		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.Default.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.css" />
-        <link rel="stylesheet" href="https://raw.githubusercontent.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
-		<link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
-        <style>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.Default.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.css" />
+		<link rel="stylesheet" href="https://raw.githubusercontent.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+		<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+		<style>
 
-        html, body {
-            width: 100%;
-            height: 100%;
-            margin: 0;
-            padding: 0;
-            }
+		html, body {
+			width: 100%;
+			height: 100%;
+			margin: 0;
+			padding: 0;
+		}
 
-        #map {
-            position:absolute;
-            top:0;
-            bottom:0;
-            right:0;
-            left:0;
-            }
-        </style>
-        <style> #map_c9cd095895724158a7d50be94ffac312 {
-            position : relative;
-            width : 100.0%;
-            height: 100.0%;
-            left: 0.0%;
-            top: 0.0%;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="folium-map" id="map_c9cd095895724158a7d50be94ffac312" ></div>
-    </body>
-    <script>
-	    
+		#map {
+			position:absolute;
+			top:0;
+			bottom:0;
+			right:0;
+			left:0;
+		}
+		</style>
+		<style> #map_c9cd095895724158a7d50be94ffac312 {
+			position : relative;
+			width : 100.0%;
+			height: 100.0%;
+			left: 0.0%;
+			top: 0.0%;
+		}
+		</style>
+	</head>
+	<body>
+		<div class="folium-map" id="map_c9cd095895724158a7d50be94ffac312" ></div>
+	</body>
+	<script>
+		 
 		L.Control.SliderControl = L.Control.extend({
-		    options: {
-		        position: 'topright',
-		        layers: null,
-		        timeAttribute: 'time',
-		        isEpoch: false,     // whether the time attribute is seconds elapsed from epoch
-		        startTimeIdx: 0,    // where to start looking for a timestring
-		        timeStrLength: 19,  // the size of  yyyy-mm-dd hh:mm:ss - if millis are present this will be larger
-		        maxValue: -1,
-		        minValue: 0,
-		        showAllOnStart: false,
-		        markers: null,
-		        range: false,
-		        follow: false,
-		        alwaysShowDate : false,
-		        rezoom: null
-		    },
+			  options: {
+				  position: 'topright',
+				  layers: null,
+				  timeAttribute: 'time',
+				  isEpoch: false,	  // whether the time attribute is seconds elapsed from epoch
+				  startTimeIdx: 0,	  // where to start looking for a timestring
+				  timeStrLength: 19,  // the size of  yyyy-mm-dd hh:mm:ss - if millis are present this will be larger
+				  maxValue: -1,
+				  minValue: 0,
+				  showAllOnStart: false,
+				  markers: null,
+				  range: false,
+				  follow: false,
+				  alwaysShowDate : false,
+				  rezoom: null
+			  },
 		
-		    initialize: function (options) {
-		        L.Util.setOptions(this, options);
-		        this._layer = this.options.layer;
+			  initialize: function (options) {
+				  L.Util.setOptions(this, options);
+				  this._layer = this.options.layer;
 		
-		    },
+			  },
 		
-		    extractTimestamp: function(time, options) {
-		        if (options.isEpoch) {
-		            time = (new Date(parseInt(time))).toString(); // this is local time
-		        }
-		        return time.substr(options.startTimeIdx, options.startTimeIdx + options.timeStrLength);
-		    },
+			  extractTimestamp: function(time, options) {
+				  if (options.isEpoch) {
+					  time = (new Date(parseInt(time))).toString(); // this is local time
+				  }
+				  return time.substr(options.startTimeIdx, options.startTimeIdx + options.timeStrLength);
+			  },
 		
-		    setPosition: function (position) {
-		        var map = this._map;
+			  setPosition: function (position) {
+				  var map = this._map;
 		
-		        if (map) {
-		            map.removeControl(this);
-		        }
+				  if (map) {
+					  map.removeControl(this);
+				  }
 		
-		        this.options.position = position;
+				  this.options.position = position;
 		
-		        if (map) {
-		            map.addControl(this);
-		        }
-		        this.startSlider();
-		        return this;
-		    },
+				  if (map) {
+					  map.addControl(this);
+				  }
+				  this.startSlider();
+				  return this;
+			  },
 		
-		    onAdd: function (map) {
-		        this.options.map = map;
+			  onAdd: function (map) {
+				  this.options.map = map;
 		
-		        // Create a control sliderContainer with a jquery ui slider
-		        var sliderContainer = L.DomUtil.create('div', 'slider', this._container);
-		        $(sliderContainer).append('<div id="leaflet-slider" style="width:200px"><div class="ui-slider-handle"></div><div id="slider-timestamp" style="width:200px; margin-top:13px; background-color:#FFFFFF; text-align:center; border-radius:5px;"></div></div>');
-		        //Prevent map panning/zooming while using the slider
-		        $(sliderContainer).mousedown(function () {
-		            map.dragging.disable();
-		        });
-		        $(document).mouseup(function () {
-		            map.dragging.enable();
-		            //Hide the slider timestamp if not range and option alwaysShowDate is set on false
-		            if (options.range || !options.alwaysShowDate) {
-		                $('#slider-timestamp').html('');
-		            }
-		        });
+				  // Create a control sliderContainer with a jquery ui slider
+				  var sliderContainer = L.DomUtil.create('div', 'slider', this._container);
+				  $(sliderContainer).append('<div id="leaflet-slider" style="width:200px"><div class="ui-slider-handle"></div><div id="slider-timestamp" style="width:200px; margin-top:13px; background-color:#FFFFFF; text-align:center; border-radius:5px;"></div></div>');
+				  //Prevent map panning/zooming while using the slider
+				  $(sliderContainer).mousedown(function () {
+					  map.dragging.disable();
+				  });
+				  $(document).mouseup(function () {
+					  map.dragging.enable();
+					  //Hide the slider timestamp if not range and option alwaysShowDate is set on false
+					  if (options.range || !options.alwaysShowDate) {
+						  $('#slider-timestamp').html('');
+					  }
+				  });
 		
-		        var options = this.options;
-		        this.options.markers = [];
+				  var options = this.options;
+				  this.options.markers = [];
 		
-		        //If a layer has been provided: calculate the min and max values for the slider
-		        if (this._layer) {
-		            var index_temp = 0;
-		            this._layer.eachLayer(function (layer) {
-		                options.markers[index_temp] = layer;
-		                ++index_temp;
-		            });
-		            options.maxValue = index_temp - 1;
-		            this.options = options;
-		        } else {
-		            console.log("Error: You have to specify a layer via new SliderControl({layer: your_layer});");
-		        }
-		        return sliderContainer;
-		    },
+				  //If a layer has been provided: calculate the min and max values for the slider
+				  if (this._layer) {
+					  var index_temp = 0;
+					  this._layer.eachLayer(function (layer) {
+						  options.markers[index_temp] = layer;
+						  ++index_temp;
+					  });
+					  options.maxValue = index_temp - 1;
+					  this.options = options;
+				  } else {
+					  console.log("Error: You have to specify a layer via new SliderControl({layer: your_layer});");
+				  }
+				  return sliderContainer;
+			  },
 		
-		    onRemove: function (map) {
-		        //Delete all markers which where added via the slider and remove the slider div
-		        for (i = this.options.minValue; i < this.options.maxValue; i++) {
-		            map.removeLayer(this.options.markers[i]);
-		        }
-		        $('#leaflet-slider').remove();
-		    },
+			  onRemove: function (map) {
+				  //Delete all markers which where added via the slider and remove the slider div
+				  for (i = this.options.minValue; i < this.options.maxValue; i++) {
+					  map.removeLayer(this.options.markers[i]);
+				  }
+				  $('#leaflet-slider').remove();
+			  },
 		
-		    startSlider: function () {
-		        _options = this.options;
-		        _extractTimestamp = this.extractTimestamp
-		        var index_start = _options.minValue;
-		        if(_options.showAllOnStart){
-		            index_start = _options.maxValue;
-		            if(_options.range) _options.values = [_options.minValue,_options.maxValue];
-		            else _options.value = _options.maxValue;
-		        }
-		        $("#leaflet-slider").slider({
-		            range: _options.range,
-		            value: _options.value,
-		            values: _options.values,
-		            min: _options.minValue,
-		            max: _options.maxValue,
-		            step: 1,
-		            slide: function (e, ui) {
-		                var map = _options.map;
-		                var fg = L.featureGroup();
-		                if(!!_options.markers[ui.value]) {
-		                    // If there is no time property, this line has to be removed (or exchanged with a different property)
-		                    if(_options.markers[ui.value].feature !== undefined) {
-		                        if(_options.markers[ui.value].feature.properties[_options.timeAttribute]){
-		                            if(_options.markers[ui.value]) $('#slider-timestamp').html(
-		                                _extractTimestamp(_options.markers[ui.value].feature.properties[_options.timeAttribute], _options));
-		                        }else {
-		                            console.error("Time property "+ _options.timeAttribute +" not found in data");
-		                        }
-		                    }else {
-		                        // set by leaflet Vector Layers
-		                        if(_options.markers [ui.value].options[_options.timeAttribute]){
-		                            if(_options.markers[ui.value]) $('#slider-timestamp').html(
-		                                _extractTimestamp(_options.markers[ui.value].options[_options.timeAttribute], _options));
-		                        }else {
-		                            console.error("Time property "+ _options.timeAttribute +" not found in data");
-		                        }
-		                    }
-		                    
-		                    var i;
-		                    // clear markers
-		                    for (i = _options.minValue; i <= _options.maxValue; i++) {
-		                        if(_options.markers[i]) map.removeLayer(_options.markers[i]);
-		                    }
-		                    if(_options.range){
-		                        // jquery ui using range
-		                        for (i = ui.values[0]; i <= ui.values[1]; i++){
-		                           if(_options.markers[i]) {
-		                               map.addLayer(_options.markers[i]);
-		                               fg.addLayer(_options.markers[i]);
-		                           }
-		                        }
-		                    }else if(_options.follow){
-		                        for (i = ui.value - _options.follow + 1; i <= ui.value ; i++) {
-		                            if(_options.markers[i]) {
-		                                map.addLayer(_options.markers[i]);
-		                                fg.addLayer(_options.markers[i]);
-		                            }
-		                        }
-		                    }else{
-		                        for (i = _options.minValue; i <= ui.value ; i++) {
-		                            if(_options.markers[i]) {
-		                                map.addLayer(_options.markers[i]);
-		                                fg.addLayer(_options.markers[i]);
-		                            }
-		                        }
-		                    }
-		                };
-		                if(_options.rezoom) {
-		                    map.fitBounds(fg.getBounds(), {
-		                        maxZoom: _options.rezoom
-		                    });
-		                }
-		            }
-		        });
-		        if (!_options.range && _options.alwaysShowDate) {
-		            $('#slider-timestamp').html(_extractTimeStamp(_options.markers[index_start].feature.properties[_options.timeAttribute], _options));
-		        }
-		        for (i = _options.minValue; i <= index_start; i++) {
-		            _options.map.addLayer(_options.markers[i]);
-		        }
-		    }
+			  startSlider: function () {
+				  _options = this.options;
+				  _extractTimestamp = this.extractTimestamp
+				  var index_start = _options.minValue;
+				  if(_options.showAllOnStart){
+					  index_start = _options.maxValue;
+					  if(_options.range) _options.values = [_options.minValue,_options.maxValue];
+					  else _options.value = _options.maxValue;
+				  }
+				  $("#leaflet-slider").slider({
+					  range: _options.range,
+					  value: _options.value,
+					  values: _options.values,
+					  min: _options.minValue,
+					  max: _options.maxValue,
+					  step: 1,
+					  slide: function (e, ui) {
+						  var map = _options.map;
+						  var fg = L.featureGroup();
+						  if(!!_options.markers[ui.value]) {
+							  // If there is no time property, this line has to be removed (or exchanged with a different property)
+							  if(_options.markers[ui.value].feature !== undefined) {
+								  if(_options.markers[ui.value].feature.properties[_options.timeAttribute]){
+									  if(_options.markers[ui.value]) $('#slider-timestamp').html(
+										  _extractTimestamp(_options.markers[ui.value].feature.properties[_options.timeAttribute], _options));
+								  }else {
+									  console.error("Time property "+ _options.timeAttribute +" not found in data");
+								  }
+							  }else {
+								  // set by leaflet Vector Layers
+								  if(_options.markers [ui.value].options[_options.timeAttribute]){
+									  if(_options.markers[ui.value]) $('#slider-timestamp').html(
+										  _extractTimestamp(_options.markers[ui.value].options[_options.timeAttribute], _options));
+								  }else {
+									  console.error("Time property "+ _options.timeAttribute +" not found in data");
+								  }
+							  }
+							  
+							  var i;
+							  // clear markers
+							  for (i = _options.minValue; i <= _options.maxValue; i++) {
+								  if(_options.markers[i]) map.removeLayer(_options.markers[i]);
+							  }
+							  if(_options.range){
+								  // jquery ui using range
+								  for (i = ui.values[0]; i <= ui.values[1]; i++){
+									 if(_options.markers[i]) {
+										 map.addLayer(_options.markers[i]);
+										 fg.addLayer(_options.markers[i]);
+									 }
+								  }
+							  }else if(_options.follow){
+								  for (i = ui.value - _options.follow + 1; i <= ui.value ; i++) {
+									  if(_options.markers[i]) {
+										  map.addLayer(_options.markers[i]);
+										  fg.addLayer(_options.markers[i]);
+									  }
+								  }
+							  }else{
+								  for (i = _options.minValue; i <= ui.value ; i++) {
+									  if(_options.markers[i]) {
+										  map.addLayer(_options.markers[i]);
+										  fg.addLayer(_options.markers[i]);
+									  }
+								  }
+							  }
+						  };
+						  if(_options.rezoom) {
+							  map.fitBounds(fg.getBounds(), {
+								  maxZoom: _options.rezoom
+							  });
+						  }
+					  }
+				  });
+				  if (!_options.range && _options.alwaysShowDate) {
+					  $('#slider-timestamp').html(_extractTimeStamp(_options.markers[index_start].feature.properties[_options.timeAttribute], _options));
+				  }
+				  for (i = _options.minValue; i <= index_start; i++) {
+					  _options.map.addLayer(_options.markers[i]);
+				  }
+			  }
 		});
 		
 		L.control.sliderControl = function (options) {
-		    return new L.Control.SliderControl(options);
+			  return new L.Control.SliderControl(options);
 		};
 
-    </script>
-    <script>
+	</script>
+	<script>
 
-        var southWest = L.latLng(-90, -180);
-        var northEast = L.latLng(90, 180);
-        var bounds = L.latLngBounds(southWest, northEast);
+		var southWest = L.latLng(-90, -180);
+		var northEast = L.latLng(90, 180);
+		var bounds = L.latLngBounds(southWest, northEast);
 
-        var map_c9cd095895724158a7d50be94ffac312 = L.map('map_c9cd095895724158a7d50be94ffac312', {
-                                       center:[47.272913066438164,11.397342199098112],
-                                       zoom: 15,
-                                       maxBounds: bounds,
-                                       layers: [],
-                                       crs: L.CRS.EPSG3857
-                                     });
+		var map_c9cd095895724158a7d50be94ffac312 = L.map('map_c9cd095895724158a7d50be94ffac312', {
+									   center:[47.272913066438164,11.397342199098112],
+									   zoom: 15,
+									   maxBounds: bounds,
+									   layers: [],
+									   crs: L.CRS.EPSG3857
+									 });
 
-        var tile_layer_57039f7ac2f345dca92096de8068042c = L.tileLayer(
-            'https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png',
-            {
-                maxZoom: 18,
-                minZoom: 1,
-                attribution: 'Map background tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
-                detectRetina: true
-                }
-            ).addTo(map_c9cd095895724158a7d50be94ffac312);
+		var tile_layer_57039f7ac2f345dca92096de8068042c = L.tileLayer(
+			'https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png',
+			{
+				maxZoom: 18,
+				minZoom: 1,
+				attribution: 'Map background tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
+				detectRetina: true
+				}
+			).addTo(map_c9cd095895724158a7d50be94ffac312);
 
-        var b1 = L.imageOverlay(
-	            'images/image_1.png',
-	            [[47.21286489004533, 11.303558357063295], [47.29574308418742, 11.456649291541291]],
-	            {"opacity": 0.5, "time": '1'}
-            );
-        var b2 = L.imageOverlay(
-	            'images/image_2.png',
-	            [[47.21286489004533, 11.303558357063295], [47.29574308418742, 11.456649291541291]],
-	            {"opacity": 0.5, "time": '2'}
-            );
-        var b3 = L.imageOverlay(
-	            'images/image_3.png',
-	            [[47.21286489004533, 11.303558357063295], [47.29574308418742, 11.456649291541291]],
-	            {"opacity": 0.5, "time": '3'}
-            );
-        var b4 = L.imageOverlay(
-	            'images/image_4.png',
-	            [[47.21286489004533, 11.303558357063295], [47.29574308418742, 11.456649291541291]],
-	            {"opacity": 0.5, "time": '4'}
-            );
-        var b5 = L.imageOverlay(
-	            'images/image_5.png',
-	            [[47.21286489004533, 11.303558357063295], [47.29574308418742, 11.456649291541291]],
-	            {"opacity": 0.5, "time": '5'}
-            );
-        var b6 = L.imageOverlay(
-	            'images/image_6.png',
-	            [[47.21286489004533, 11.303558357063295], [47.29574308418742, 11.456649291541291]],
-	            {"opacity": 0.5, "time": '6'}
-            );
-        var b7 = L.imageOverlay(
-	            'images/image_7.png',
-	            [[47.21286489004533, 11.303558357063295], [47.29574308418742, 11.456649291541291]],
-	            {"opacity": 0.5, "time": '7'}
-            );
-        var b8 = L.imageOverlay(
-	            'images/image_8.png',
-	            [[47.21286489004533, 11.303558357063295], [47.29574308418742, 11.456649291541291]],
-	            {"opacity": 0.5, "time": '8'}
-            );
-        var b9 = L.imageOverlay(
-	            'images/image_9.png',
-	            [[47.21286489004533, 11.303558357063295], [47.29574308418742, 11.456649291541291]],
-	            {"opacity": 0.5, "time": '9'}
-            );
-        var b10 = L.imageOverlay(
-	            'images/image_10.png',
-	            [[47.21286489004533, 11.303558357063295], [47.29574308418742, 11.456649291541291]],
-	            {"opacity": 0.5, "time": '10'}
-            );
-        var b11 = L.imageOverlay(
-	            'images/image_11.png',
-	            [[47.21286489004533, 11.303558357063295], [47.29574308418742, 11.456649291541291]],
-	            {"opacity": 0.5, "time": '11'}
-            );
-        var b12 = L.imageOverlay(
-	            'images/image_12.png',
-	            [[47.21286489004533, 11.303558357063295], [47.29574308418742, 11.456649291541291]],
-	            {"opacity": 0.5, "time": '12'}
-            );
-        var b13 = L.imageOverlay(
-	            'images/image_13.png',
-	            [[47.21286489004533, 11.303558357063295], [47.29574308418742, 11.456649291541291]],
-	            {"opacity": 0.5, "time": '13'}
-            );
-        var b14 = L.imageOverlay(
-	            'images/image_14.png',
-	            [[47.21286489004533, 11.303558357063295], [47.29574308418742, 11.456649291541291]],
-	            {"opacity": 0.5, "time": '14'}
-            );
-        var b15 = L.imageOverlay(
-	            'images/image_15.png',
-	            [[47.21286489004533, 11.303558357063295], [47.29574308418742, 11.456649291541291]],
-	            {"opacity": 0.5, "time": '15'}
-            );
-        var b16 = L.imageOverlay(
-	            'images/image_16.png',
-	            [[47.21286489004533, 11.303558357063295], [47.29574308418742, 11.456649291541291]],
-	            {"opacity": 0.5, "time": '16'}
-            );
-        var b17 = L.imageOverlay(
-	            'images/image_17.png',
-	            [[47.21286489004533, 11.303558357063295], [47.29574308418742, 11.456649291541291]],
-	            {"opacity": 0.5, "time": '17'}
-            );
-        var b18 = L.imageOverlay(
-	            'images/image_18.png',
-	            [[47.21286489004533, 11.303558357063295], [47.29574308418742, 11.456649291541291]],
-	            {"opacity": 0.5, "time": '18'}
-            );
-        var b19 = L.imageOverlay(
-	            'images/image_19.png',
-	            [[47.21286489004533, 11.303558357063295], [47.29574308418742, 11.456649291541291]],
-	            {"opacity": 0.5, "time": '19'}
-            );
-        var b20 = L.imageOverlay(
-	            'images/image_20.png',
-	            [[47.21286489004533, 11.303558357063295], [47.29574308418742, 11.456649291541291]],
-	            {"opacity": 0.5, "time": '20'}
-            );
-        var b21 = L.imageOverlay(
-	            'images/image_21.png',
-	            [[47.21286489004533, 11.303558357063295], [47.29574308418742, 11.456649291541291]],
-	            {"opacity": 0.5, "time": '21'}
-            );
+		var b1 = L.imageOverlay(
+				 'images/image_1.png',
+				 [[47.21286489004533, 11.303558357063295], [47.29574308418742, 11.456649291541291]],
+				 {"opacity": 0.5, "time": '1'}
+			);
+		var b2 = L.imageOverlay(
+				 'images/image_2.png',
+				 [[47.21286489004533, 11.303558357063295], [47.29574308418742, 11.456649291541291]],
+				 {"opacity": 0.5, "time": '2'}
+			);
+		var b3 = L.imageOverlay(
+				 'images/image_3.png',
+				 [[47.21286489004533, 11.303558357063295], [47.29574308418742, 11.456649291541291]],
+				 {"opacity": 0.5, "time": '3'}
+			);
+		var b4 = L.imageOverlay(
+				 'images/image_4.png',
+				 [[47.21286489004533, 11.303558357063295], [47.29574308418742, 11.456649291541291]],
+				 {"opacity": 0.5, "time": '4'}
+			);
+		var b5 = L.imageOverlay(
+				 'images/image_5.png',
+				 [[47.21286489004533, 11.303558357063295], [47.29574308418742, 11.456649291541291]],
+				 {"opacity": 0.5, "time": '5'}
+			);
+		var b6 = L.imageOverlay(
+				 'images/image_6.png',
+				 [[47.21286489004533, 11.303558357063295], [47.29574308418742, 11.456649291541291]],
+				 {"opacity": 0.5, "time": '6'}
+			);
+		var b7 = L.imageOverlay(
+				 'images/image_7.png',
+				 [[47.21286489004533, 11.303558357063295], [47.29574308418742, 11.456649291541291]],
+				 {"opacity": 0.5, "time": '7'}
+			);
+		var b8 = L.imageOverlay(
+				 'images/image_8.png',
+				 [[47.21286489004533, 11.303558357063295], [47.29574308418742, 11.456649291541291]],
+				 {"opacity": 0.5, "time": '8'}
+			);
+		var b9 = L.imageOverlay(
+				 'images/image_9.png',
+				 [[47.21286489004533, 11.303558357063295], [47.29574308418742, 11.456649291541291]],
+				 {"opacity": 0.5, "time": '9'}
+			);
+		var b10 = L.imageOverlay(
+				 'images/image_10.png',
+				 [[47.21286489004533, 11.303558357063295], [47.29574308418742, 11.456649291541291]],
+				 {"opacity": 0.5, "time": '10'}
+			);
+		var b11 = L.imageOverlay(
+				 'images/image_11.png',
+				 [[47.21286489004533, 11.303558357063295], [47.29574308418742, 11.456649291541291]],
+				 {"opacity": 0.5, "time": '11'}
+			);
+		var b12 = L.imageOverlay(
+				 'images/image_12.png',
+				 [[47.21286489004533, 11.303558357063295], [47.29574308418742, 11.456649291541291]],
+				 {"opacity": 0.5, "time": '12'}
+			);
+		var b13 = L.imageOverlay(
+				 'images/image_13.png',
+				 [[47.21286489004533, 11.303558357063295], [47.29574308418742, 11.456649291541291]],
+				 {"opacity": 0.5, "time": '13'}
+			);
+		var b14 = L.imageOverlay(
+				 'images/image_14.png',
+				 [[47.21286489004533, 11.303558357063295], [47.29574308418742, 11.456649291541291]],
+				 {"opacity": 0.5, "time": '14'}
+			);
+		var b15 = L.imageOverlay(
+				 'images/image_15.png',
+				 [[47.21286489004533, 11.303558357063295], [47.29574308418742, 11.456649291541291]],
+				 {"opacity": 0.5, "time": '15'}
+			);
+		var b16 = L.imageOverlay(
+				 'images/image_16.png',
+				 [[47.21286489004533, 11.303558357063295], [47.29574308418742, 11.456649291541291]],
+				 {"opacity": 0.5, "time": '16'}
+			);
+		var b17 = L.imageOverlay(
+				 'images/image_17.png',
+				 [[47.21286489004533, 11.303558357063295], [47.29574308418742, 11.456649291541291]],
+				 {"opacity": 0.5, "time": '17'}
+			);
+		var b18 = L.imageOverlay(
+				 'images/image_18.png',
+				 [[47.21286489004533, 11.303558357063295], [47.29574308418742, 11.456649291541291]],
+				 {"opacity": 0.5, "time": '18'}
+			);
+		var b19 = L.imageOverlay(
+				 'images/image_19.png',
+				 [[47.21286489004533, 11.303558357063295], [47.29574308418742, 11.456649291541291]],
+				 {"opacity": 0.5, "time": '19'}
+			);
+		var b20 = L.imageOverlay(
+				 'images/image_20.png',
+				 [[47.21286489004533, 11.303558357063295], [47.29574308418742, 11.456649291541291]],
+				 {"opacity": 0.5, "time": '20'}
+			);
+		var b21 = L.imageOverlay(
+				 'images/image_21.png',
+				 [[47.21286489004533, 11.303558357063295], [47.29574308418742, 11.456649291541291]],
+				 {"opacity": 0.5, "time": '21'}
+			);
 		
 		var biophony_states = [b1, b2, b3, b4, b5, b6, b7, b8, b9, b10, b11, b12, b13, b14, b15, b16, b17, b18, b19, b20, b21];
 		layerGroup = L.layerGroup(biophony_states);
 		var sliderControl = L.control.sliderControl({
-		  layer: layerGroup,
-		  follow: true
+			layer: layerGroup,
+			follow: true
 		});
 		map_c9cd095895724158a7d50be94ffac312.addControl(sliderControl);
 		sliderControl.startSlider();
 		
 		L.control.scale().addTo(map_c9cd095895724158a7d50be94ffac312);
-        
-    </script>
+		
+	</script>
 </html>
