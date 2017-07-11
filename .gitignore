@@ -1,5 +1,9 @@
 # OS X
 .DS_store
+Icon?
+
+# Python
+*__pycache__*
 
 # Linux
 nohup.out
