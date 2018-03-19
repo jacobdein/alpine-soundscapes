@@ -22,12 +22,12 @@ class AnchoredScaleBar(AnchoredOffsetbox):
         from matplotlib.offsetbox import AuxTransformBox, VPacker, HPacker, TextArea, DrawingArea
         bars = AuxTransformBox(transform)
         if sizex:
-            bars.add_artist(Rectangle((0,0), sizex, 0, fc="none"))
+            bars.add_artist(Rectangle((0,0), sizex, 0, color="black"))
         if sizey:
-            bars.add_artist(Rectangle((0,0), 0, sizey, fc="none"))
+            bars.add_artist(Rectangle((0,0), 0, sizey, color="black"))
 
         if sizex and labelx:
-            bars = VPacker(children=[bars, TextArea(labelx, minimumdescent=False)],
+            bars = VPacker(children=[bars, TextArea(labelx, minimumdescent=False, textprops={"size":prop.get_size()})],
                            align="center", pad=0, sep=sep)
         if sizey and labely:
             bars = HPacker(children=[TextArea(labely), bars],
