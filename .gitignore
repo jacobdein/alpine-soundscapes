@@ -16,3 +16,4 @@ nacoustik
 # jupyter
 .ipynb_checkpoints
 utilities/Local paths.ipynb
+.tex
