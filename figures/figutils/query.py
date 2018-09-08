@@ -10,6 +10,7 @@ License: MIT
 
 import geopandas
 import pyproj
+import gdal
 from django.db import connection
 from landscape.models import LandCover
 from django.contrib.gis.db.models.functions import Intersection, Envelope
@@ -34,3 +35,17 @@ def get_landcover(point, radius=100):
     result = LandCover.objects.filter(geometry__intersects=buffer.envelope)\
                           .annotate(intersection=Intersection('geometry', buffer.envelope))
     return result
+
+# query database for a raster to be returned as a NumPy array
+def get_raster(query):
+    cursor = connection.cursor()
+    cursor.execute(sql=query)
+    vsipath = '/vsimem/from_postgis'
+    memview = cursor.fetchone()[0]
+    gdal.FileFromMemBuffer(vsipath, bytes(memview))
+    ds = gdal.Open(vsipath)
+    band = ds.GetRasterBand(1)
+    data = band.ReadAsArray()
+    ds = band = None
+    gdal.Unlink(vsipath)
+    return data
